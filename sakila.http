@@ -1,0 +1,27 @@
+###get languages
+GET http://localhost:8080/languages
+
+###create a language
+POST http://localhost:8080/languages
+Content-Type: application/json
+
+{
+    "language": "Arabe"   
+
+}
+
+###get a language
+GET http://localhost:8080/languages/1
+
+
+### update a language
+PUT http://localhost:8080/languages/1
+Content-Type: application/json
+
+{
+    "language": "Ruso"
+}
+
+
+### delete a language
+DELETE  http://localhost:8080/languages/1
